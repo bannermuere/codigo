@@ -278,7 +278,7 @@ header{
     width: 100%;
     object-fit: cover;
     transition: all 200ms;
-    padding-top: 99%;
+    padding-top: 100%;
     margin: auto;
 }
 
