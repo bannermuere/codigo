@@ -76,7 +76,6 @@ header{
 
 .logo a{
     height: 160px;
-    position: absolute;
     display: flex;
     align-items: center;
     font-size: 3rem;
@@ -137,7 +136,6 @@ header{
 .blackMode{
     width: 90%;
     margin: auto;
-    margin-top: 40px;
     height: 60px;
 }
 
@@ -267,6 +265,7 @@ header{
 .servicios{
     width: 100%;
     margin-top: 80px;
+    margin: auto;
 }
 
 .contenidoServicios{
@@ -284,7 +283,7 @@ header{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    
 }
 
 .contenidoServicios div a{
@@ -316,7 +315,7 @@ header{
     width: 100%;
     object-fit: cover;
     transition: all 200ms;
-    padding-top: 100%;
+    padding-top: 100vh;
     margin: auto;
 }
 
