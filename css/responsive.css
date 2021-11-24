@@ -1,0 +1,23 @@
+@media screen and (max-width: 1220px){
+    .contenidoSobreNosotros section{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1020px){
+    .contenidoSobreNosotros{
+        justify-content: space-between;
+    }
+    .contenidoSobreNosotros section{
+        width: 50%;
+    }
+    .contenidoServicios div a{
+        width: 50%;
+    }
+    .formularioContacto{
+        width: 70%;
+    }
+    .informacionContacto{
+        width: 30%;
+    }
+}
