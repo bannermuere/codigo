@@ -28,6 +28,14 @@ a{
     color: var(--fuenteBlackMode);
 }
 
+::-webkit-scrollbar{
+    width: 10px;   
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--fuente);
+}
+
 /* body */
 
 body{
@@ -42,6 +50,7 @@ body{
 
 header{
     width: 100%;
+    position: absolute;
 }
 
 .contenidoNav{
@@ -57,6 +66,7 @@ header{
     align-items: center;
     justify-content: center;
     font-size: 2rem;
+    color: var(--fondo);
 }
 
 .menu{
@@ -85,6 +95,7 @@ header{
     position: relative;
     font-size: 1rem;
     padding-bottom: 3px;
+    color: var(--fondo);
 }
 
 .menu a::before {
@@ -94,7 +105,7 @@ header{
     left: 0;
     width: 100%;
     height: 2px;
-    background: var(--fuente) ;
+    background: var(--fondo) ;
     z-index: 2;
     transform: scaleX(0);
     transform-origin: center;
@@ -114,15 +125,17 @@ header{
 /* BlackMode */
 
 .blackMode{
-    width: 90%;
+    width: 100%;
     margin: auto;
+    position: absolute;
+    margin-top: 100px;
 }
 
 .botonBlackMode{
     background: var(--fondo);
-    border: solid 2px var(--fuente);
     padding: 0;
     border-radius: 5px;
+    margin-left: 5%;
 }
 
 .botonBlackMode span{
@@ -155,15 +168,20 @@ header{
 
 .activo{
     background: var(--fondoBlackMode);
-    border: solid 2px var(--fuenteBlackMode);
 }
 
 .activo span i{
-    color: var(--fuenteBlackMode);
+    filter: invert();
 }
 
 .activo:hover {
     background: var(--fuenteBlackMode);
+    filter: none;
+}
+
+.activo span i:hover{
+    color: var(--fuente);
+    filter: none;
 }
 
 
@@ -171,27 +189,18 @@ header{
 
 .portada{
     width: 100%;
-    height: 500px;
-    display: flex;
-}
+    height: 70vh;
+    background: hsla(177, 87%, 79%, 1);
 
-.contenidoPortada{
-    margin: 70px auto;
-    width: 120px;
-    height: 120px;
-    background-color: #d3d3d3;
-    padding: 100px;
-    border-radius: 50%;
-}
+    background: hsla(221, 45%, 73%, 1);
 
-.contenidoPortada img{
-    width: 100%;
-    height: 100%;
-}
+background: linear-gradient(90deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%);
 
-.dark .contenidoPortada img{
-    filter: invert();
+background: -moz-linear-gradient(90deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%);
 
+background: -webkit-linear-gradient(90deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9BAFD9", endColorstr="#103783", GradientType=1 );
 }
 
 
@@ -237,7 +246,41 @@ header{
     margin: 10px;
     border-radius: 20px;
     text-align: center;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    overflow: hidden;
+    border: 3px white solid;
 }
+
+.servicio a:hover{
+    color: #ffffff;
+}
+
+.servicio a::after{
+    content: "";
+    background: #ee4040;
+    position: absolute;
+    z-index: -1;
+    display: block;
+    top: 0;
+    bottom: 0;
+    right: 100%;
+    left: -100%;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+}
+
+.servicio a:hover::after{
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+}
+
+
 
 .servicio h3, .servicio p{
     color: var(--fondo);
