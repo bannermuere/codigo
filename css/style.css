@@ -69,6 +69,10 @@ header{
     color: var(--fondo);
 }
 
+.logo a:hover{
+    transform: scale(1.1);
+}
+
 .menu{
     height: 120px;
 }
@@ -162,9 +166,7 @@ header{
     filter: invert();
 }
 
-
 /* 0p */
-
 
 .activo{
     background: var(--fondoBlackMode);
@@ -184,25 +186,18 @@ header{
     filter: none;
 }
 
-
 /* Portada */
 
 .portada{
     width: 100%;
     height: 70vh;
     background: hsla(177, 87%, 79%, 1);
-
     background: hsla(221, 45%, 73%, 1);
-
-background: linear-gradient(90deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%);
-
-background: -moz-linear-gradient(90deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%);
-
-background: -webkit-linear-gradient(90deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%);
-
-filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9BAFD9", endColorstr="#103783", GradientType=1 );
+    background: linear-gradient(90deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9BAFD9", endColorstr="#103783", GradientType=1 );
 }
-
 
 /* Servicios */
 
@@ -237,6 +232,10 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9BAFD9", en
     flex-direction: column;
     justify-content: end;
     align-items: center;
+}
+
+.servicio:hover{
+    transform: scale(1.02);
 }
 
 .servicio a{
@@ -279,8 +278,6 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9BAFD9", en
     -webkit-transition: all 0.35s;
     transition: all 0.35s;
 }
-
-
 
 .servicio h3, .servicio p{
     color: var(--fondo);
@@ -347,6 +344,10 @@ input[type="radio"]{
     border-radius: 10px;
 }
 
+.contenidoPortafolio div:hover{
+    transform: scale(1.02);
+}
+
 .contenidoPortafolio :nth-child(2){
     width: 35%;
     height: 50%;
@@ -364,20 +365,20 @@ input[type="radio"]{
     border-radius: 10px;
 }
 
-[value="programacion"]:checked ~ .contenedorPortafolio .contenidoPortafolio:not([data-category~="programacion"]),
-[value="eventos"]:checked ~ .contenedorPortafolio .contenidoPortafolio:not([data-category~="eventos"]),
-[value="films"]:checked ~ .contenedorPortafolio .contenidoPortafolio:not([data-category~="films"]),
-[value="tienda"]:checked ~ .contenedorPortafolio .contenidoPortafolio:not([data-category~="tienda"]){
-    display: none;
-}
+    [value="programacion"]:checked ~ .contenedorPortafolio .contenidoPortafolio:not([data-category~="programacion"]),
+    [value="eventos"]:checked ~ .contenedorPortafolio .contenidoPortafolio:not([data-category~="eventos"]),
+    [value="films"]:checked ~ .contenedorPortafolio .contenidoPortafolio:not([data-category~="films"]),
+    [value="tienda"]:checked ~ .contenedorPortafolio .contenidoPortafolio:not([data-category~="tienda"]){
+        display: none;
+    }
 
-[value="programacion"]:checked ~ .contenedorCategorias [for="programacion"],
-[value="eventos"]:checked ~ .contenedorCategorias [for="eventos"],
-[value="films"]:checked ~ .contenedorCategorias [for="films"],
-[value="tienda"]:checked ~ .contenedorCategorias [for="tienda"]{
-    background-color: #ee4040;
-    color: var(--fondo);
-}
+    [value="programacion"]:checked ~ .contenedorCategorias [for="programacion"],
+    [value="eventos"]:checked ~ .contenedorCategorias [for="eventos"],
+    [value="films"]:checked ~ .contenedorCategorias [for="films"],
+    [value="tienda"]:checked ~ .contenedorCategorias [for="tienda"]{
+        background-color: #ee4040;
+        color: var(--fondo);
+    }
 
 
 .contenedorContacto{
@@ -405,6 +406,10 @@ input[type="radio"]{
     background-color: #ee4040;
 }
 
+.contacto:hover{
+    transform: scale(1.02);
+}
+
 .contacto h1, .contacto p{
     color: var(--fondo);
     width: 80%;
@@ -414,6 +419,7 @@ input[type="radio"]{
     filter: invert();
     width: 2rem;
     height: 2rem;
+    margin-top: 20px;
 }
 
 .formularioContacto{
@@ -429,6 +435,10 @@ input[type="radio"]{
     -webkit-box-shadow: 10px 10px 23px -14px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 23px -14px rgba(0,0,0,0.75);
     box-shadow: 10px 10px 23px -14px rgba(0,0,0,0.75);
+}
+
+.formularioContacto:hover{
+    transform: translateX(-48%);
 }
 
 .formularioContacto label{
