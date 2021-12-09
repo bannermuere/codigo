@@ -47,12 +47,10 @@
     
     .contenidoPortafolio :nth-child(2){
         width: 45%;
-        height: 50%;
     }
     
     .contenidoPortafolio :nth-child(3){
         width: 45%;
-        height: 45%;
     }
 
     .contenidoContacto{
@@ -70,6 +68,10 @@
         text-align: center;
     }
 
+    .contacto:hover{
+        transform: scale(1.02);
+    }
+
     .formularioContacto{
         width: 80%;
         transform: translateX(0);
@@ -77,6 +79,10 @@
         -webkit-box-shadow: 1px 5px 11px 0px rgba(0,0,0,0.75);
         -moz-box-shadow: 1px 5px 11px 0px rgba(0,0,0,0.75);
         box-shadow: 1px 5px 11px 0px rgba(0,0,0,0.75);
+    }
+
+    .formularioContacto:hover{
+        transform: translateY(-160px);
     }
 }
 
@@ -92,6 +98,37 @@
 
     .logo{
         display: none;
+    }
+
+    .menu nav ul{
+        padding-inline-start: 0px;
+    }
+    
+    .menu nav ul li a{
+        font-size: 0;
+    }
+
+    .menu nav ul li a img{
+        display: flex;
+    }
+
+    .contenidoPortafolio{
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        height: auto;
+    }
+
+    .contenidoPortafolio :nth-child(1), 
+    .contenidoPortafolio :nth-child(2),    
+    .contenidoPortafolio :nth-child(3){
+        width: 100%;
+        height: 400px;
+        margin-top: 20px;
+    }
+
+    .contenedorCategorias label{
+        padding: 15px 5px;
     }
 
 }
