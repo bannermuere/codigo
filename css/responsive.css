@@ -12,6 +12,14 @@
         width: 90%;
     }
 
+    .contenidoPortada{
+        width: 90%;
+    }
+
+    .contenidoPortada p, .contenidoPortada h1{
+        max-width: 80%;
+    }
+
     .contenidoContacto{
         width: 100%;
         transform: translateX(0);
@@ -141,7 +149,7 @@
     }
 
     .contenedorCategorias label{
-        padding: 15px 5px;
+        padding: 15px 10px;
     }
 
 }

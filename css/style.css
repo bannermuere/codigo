@@ -209,6 +209,20 @@ header{
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9BAFD9", endColorstr="#103783", GradientType=1 );
 }
 
+.contenidoPortada{
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contenidoPortada p, .contenidoPortada h1{
+    max-width: 60%;
+    color: var(--fondo);
+}
+
 /* Sobre nosotros */
 
 .presentacion{
@@ -225,13 +239,26 @@ header{
 
 /* Servicios */
 
+
+.contenedorServicios{
+    width: 100%;
+    background-color: #f5f5f5;
+    margin-top: 100px;
+}
+
 .servicios{
     width: 70%;
-    margin: 100px auto 0 auto;
+    margin: 80px auto 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding-bottom: 120px;
+}
+
+.servicios p{
+    max-width: 60%;
+    margin: 0;
 }
 
 .contenedorServicios{
@@ -239,6 +266,7 @@ header{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 40px;
 }
 
 .servicio{
@@ -247,7 +275,7 @@ header{
     background-color: #ee4040;
     border-radius: 10px;
     padding: 40px;
-    margin-top: 40px;
+    margin-top: 0px;
 }
 
 .servicio section{
@@ -313,7 +341,7 @@ header{
 
 .portafolio{
     width: 70%;
-    margin: 200px auto;
+    margin: 70px auto 120px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -406,7 +434,6 @@ input[type="radio"]{
         background-color: #ee4040;
         color: var(--fondo);
     }
-
 
 .contenedorContacto{
     width: 100%;
