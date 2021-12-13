@@ -15,23 +15,22 @@
 
     <script src="https://unpkg.com/scrollreveal"></script>
 
-    <script>
-        ScrollReveal({ duration: 1000 })
-    </script>
-
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/scroll.css">
+
+
 
 </head>
 <body>
     <header>
         <div class="nav">
             <div class="contenidoNav">
-                <div class="logo">
+                <div class="logo load-hidden">
                     <a href="">CODIGO</a>
                 </div>
-                <div class="menu">
+                <div class="menu load-hidden">
                     <nav>
                         <ul>
                             <li><a class="cerrarmenu" href="#"><img src="img/icons/header/inicio.svg" alt=""> Inicio</a></li>
@@ -45,7 +44,7 @@
         </div>
     </header>
 
-    <div class="blackMode">
+    <div class="blackMode load-hidden">
         <button class="botonBlackMode" id="botonBlackMode">
             <span><i class="fas fa-moon"></i></span>
         </button>
