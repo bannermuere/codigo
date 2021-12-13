@@ -209,6 +209,20 @@ header{
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9BAFD9", endColorstr="#103783", GradientType=1 );
 }
 
+/* Sobre nosotros */
+
+.presentacion{
+    width: 70%;
+    margin: auto;
+    margin-top: 120px;
+}
+
+.presentacion div p{
+    max-width: 95%;
+    margin: auto;
+    margin-top: 20px;
+}
+
 /* Servicios */
 
 .servicios{
