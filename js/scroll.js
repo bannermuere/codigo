@@ -8,5 +8,5 @@ ScrollReveal({ reset: true }).reveal('.servicio', { interval: 200 });
 
 ScrollReveal({ reset: true }).reveal('.portafolio');
 
-ScrollReveal().reveal('.contenedorContacto');
+
 
