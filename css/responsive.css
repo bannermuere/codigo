@@ -85,7 +85,7 @@
     }
 
     .formularioContacto{
-        width: 60%;
+        width: 70%;
         transform: translateX(0);
         transform: translateY(-180px);
         -webkit-box-shadow: 1px 5px 11px 0px rgba(0,0,0,0.75);
@@ -94,7 +94,7 @@
     }
 
     .formularioContacto:hover{
-        transform: translateY(-250px);
+        transform: translateY(-260px);
     }
 
     .servicios p{
