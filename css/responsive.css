@@ -96,6 +96,10 @@
     .formularioContacto:hover{
         transform: translateY(-250px);
     }
+
+    .servicios p{
+        max-width: 80%;
+    }
 }
 
 @media screen and (max-width: 820px) {
@@ -103,6 +107,10 @@
     .servicio{
         width: 100%;
         margin: 40px auto 0px;
+    }
+
+    .servicios p{
+        max-width: 90%;
     }
 
     .contenidoNav{
