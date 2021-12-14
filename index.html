@@ -21,7 +21,7 @@
 </head>
 <body>
     <header>
-        <div class="nav">
+        <div id="inicio" class="nav">
             <div class="contenidoNav">
                 <div class="logo load-hidden">
                     <a href="">CODIGO</a>
@@ -29,10 +29,10 @@
                 <div class="menu load-hidden">
                     <nav>
                         <ul>
-                            <li><a class="cerrarmenu" href="#"><img src="img/icons/header/inicio.svg" alt=""> Inicio</a></li>
-                            <li><a class="cerrarmenu" href="#"><img src="img/icons/header/redes.svg" alt=""> Servicios</a></li>
-                            <li><a class="cerrarmenu" href="#"><img src="img/icons/header/portafolio.svg" alt=""> Portafolio</a></li>
-                            <li><a class="cerrarmenu" href="#"><img src="img/icons/header/contacto.svg" alt=""> Contacto</a></li>
+                            <li><a class="cerrarmenu" href="#inicio"><img src="img/icons/header/inicio.svg" alt=""> Inicio</a></li>
+                            <li><a class="cerrarmenu" href="#servicios"><img src="img/icons/header/redes.svg" alt=""> Servicios</a></li>
+                            <li><a class="cerrarmenu" href="#portafolio"><img src="img/icons/header/portafolio.svg" alt=""> Portafolio</a></li>
+                            <li><a class="cerrarmenu" href="#contacto"><img src="img/icons/header/contacto.svg" alt=""> Contacto</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -62,26 +62,26 @@
         </div>
     </div>
 
-    <div class="contenedorServicios">
+    <div class="contenedorServicios" id="servicios">
         <div class="servicios">
             <h1>Servicios</h1>
             <p>Como empresa de contenido web, ofrecemos diferentes servicios que van desde grabacion de video clips, hasta crear paginas web</p>
             <div class="contenedorServicios">
                 <div class="servicio">
                     <section>                    
-                        <a href="">PAGINAS WEB</a>
+                        <a href="/subpage/webpages.html">PAGINAS WEB</a>
                         <h3>Creación de paginas web</h2>
                     </section>
                 </div>
                 <div class="servicio">
                     <section>                    
-                        <a href="">MULTIMEDIA</a>
+                        <a href="/subpage/films.html">MULTIMEDIA</a>
                         <h3>Grabación y producción multimedia</h2>
                     </section>
                 </div>
                 <div class="servicio">
                     <section>                    
-                        <a href="">TIENDA</a>
+                        <a href="/subpage/tienda.html">TIENDA</a>
                         <h3>Merch de codigo</h2>
                     </section>
                 </div>
@@ -91,98 +91,100 @@
 
 
 
-    <div class="portafolio">
+    <div class="portafolio" id="portafolio">
         <h1>Portafolio</h1>
-
-        <input type="radio" id="programacion" value ="programacion" name="categorias" checked>
-        <input type="radio" id="eventos" value ="eventos" name="categorias" >
+        <input type="radio" id="eventos" value ="eventos" name="categorias" checked>
         <input type="radio" id="films" value ="films" name="categorias" >
-        <input type="radio" id="tienda" value ="tienda" name="categorias" >
+        <input type="radio" id="bodas" value ="bodas" name="categorias" >
 
 
         <div class="contenedorCategorias">
-            <label class="op" for="programacion">Programación</label>
-            <label class="op" for="eventos">Eventos</label>
-            <label class="op" for="films">Films</label>
-            <label class="op" for="tienda">Tienda</label>
+            <label for="eventos">Eventos</label>
+            <label for="films">Films</label>
+            <label for="bodas">Bodas</label>
         </div>
 
         <div class="contenedorPortafolio">
-            <div class="contenidoPortafolio" data-category="programacion">
-                <div>
-                    <img src="img/02.jpg" alt="">
-                </div>
-                <div>
-                    <img src="img/02.jpg" alt="">
-                </div>
-                <div>
-                    <img src="img/02.jpg" alt="">
-                </div>
-            </div>
-    
             <div class="contenidoPortafolio" data-category="eventos">
                 <div>
-                    <img src="img/sleep.jpg" alt="">
+                    <img src="img/02.jpg" alt="">
                 </div>
                 <div>
-                    <img src="img/sleep.jpg" alt="">
+                    <img src="img/02.jpg" alt="">
                 </div>
                 <div>
-                    <img src="img/sleep.jpg" alt="">
+                    <img src="img/02.jpg" alt="">
                 </div>
             </div>
     
             <div class="contenidoPortafolio" data-category="films">
                 <div>
-                    <img src="img/me.jpg" alt="">
+                    <img src="img/sleep.jpg" alt="">
                 </div>
                 <div>
-                    <img src="img/me.jpg" alt="">
+                    <img src="img/sleep.jpg" alt="">
                 </div>
                 <div>
-                    <img src="img/me.jpg" alt="">
+                    <img src="img/sleep.jpg" alt="">
                 </div>
             </div>
-
-            <div class="contenidoPortafolio" data-category="tienda">
+    
+            <div class="contenidoPortafolio" data-category="bodas">
                 <div>
-                    <img src="img/copper.jpg" alt="">
+                    <img src="img/me.jpg" alt="">
                 </div>
                 <div>
-                    <img src="img/copper.jpg" alt="">
+                    <img src="img/me.jpg" alt="">
                 </div>
                 <div>
-                    <img src="img/copper.jpg" alt="">
+                    <img src="img/me.jpg" alt="">
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="contenedorContacto">
+    <div class="contenedorContacto" id="contacto">
         <div class="contenidoContacto">
             <div class="contacto">
                 <h1>Contacta con nosotros</h1>
                 <p>Platiquemos de tu proyecto, amamos trabajar para nuestro clientes. </p>
-                <div>
-                    <a href=""><img src="img/icons/marcas.png" alt=""></a>
-                    <a href=""><img src="img/icons/marcas.png" alt=""></a>
-                    <a href=""><img src="img/icons/marcas.png" alt=""></a>
-                </div>
             </div>
             <div class="formularioContacto">
                 <label for="">Nombre</label>
-                <input type="text" name="" id="">
+                <input type="text" name="" id="" placeholder="Escribe tu nombre aquí">
                 <label for="">Email</label>
-                <input type="email" name="" id="">
+                <input type="email" name="" id="" placeholder="Escribe una manera de contacto">
                 <label for="">Razon de contacto</label>
-                <textarea name="" id="" cols="10" rows="10"></textarea>
+                <textarea name="" id="" cols="10" rows="10" placeholder="¿En que te podemos ayudar?"></textarea>
                 <button type="submit">Enviar</button>
             </div>
         </div>
     </div>
 
+    <footer>
+        <div class="contenidoFooter">
+            <h3>CodigoFIlm</h3>
+            <div class="enlacesFooter">
+                <a href="#inicio">Home</a>
+                <a href="#servicios">Services</a>
+                <a href="subpage/tienda.html">Shop</a>
+                <a href="#portafolio">Portfolio</a>
+                <a href="#contacto">Contact</a>
+            </div>
+            <hr>
+            <section>
+                <p> @2021 CodigoFilm All right reseved</p>
+                <div class="redesFooter">
+                    <a href="https://www.instagram.com/codigo_film" target="_blank" class="instagram"><img src="img/icons/redes/instagram.png" alt=""></a>
+                    <a href="https://api.whatsapp.com/send?phone=50230702311&text=Hola!%20Necesito%20informaci%C3%B3n%20sobre%20sus%20servicios%20" target="_blank" class="whatsapp"><img src="img/icons/redes/whatsapp.png" alt=""></a>
+                    <a href="https://www.facebook.com/CodigoFilm/" target="_blank" class="facebook"><img src="img/icons/redes/facebook.png" alt=""></a>
+                    <a href="" class="youtube"><img src="img/icons/redes/youtube.png" alt=""></a>
+                </div>
+            </section>
+        </div>
+    </footer>
+
     <script src="js/scroll.js"></script>
-    <script src="js/fade.js"></script>
     <script src="js/blackMode.js"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
 

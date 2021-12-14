@@ -227,8 +227,7 @@ header{
 
 .presentacion{
     width: 70%;
-    margin: auto;
-    margin-top: 120px;
+    margin: 120px auto;
 }
 
 .presentacion div p{
@@ -244,6 +243,10 @@ header{
     width: 100%;
     background-color: #f5f5f5;
     margin-top: 100px;
+}
+
+.dark .contenedorServicios{
+    background-color: #272727;
 }
 
 .servicios{
@@ -429,17 +432,15 @@ input[type="radio"]{
     border-radius: 10px;
 }
 
-    [value="programacion"]:checked ~ .contenedorPortafolio .contenidoPortafolio:not([data-category~="programacion"]),
     [value="eventos"]:checked ~ .contenedorPortafolio .contenidoPortafolio:not([data-category~="eventos"]),
     [value="films"]:checked ~ .contenedorPortafolio .contenidoPortafolio:not([data-category~="films"]),
-    [value="tienda"]:checked ~ .contenedorPortafolio .contenidoPortafolio:not([data-category~="tienda"]){
+    [value="bodas"]:checked ~ .contenedorPortafolio .contenidoPortafolio:not([data-category~="bodas"]){
         display: none;
     }
 
-    [value="programacion"]:checked ~ .contenedorCategorias [for="programacion"],
     [value="eventos"]:checked ~ .contenedorCategorias [for="eventos"],
     [value="films"]:checked ~ .contenedorCategorias [for="films"],
-    [value="tienda"]:checked ~ .contenedorCategorias [for="tienda"]{
+    [value="bodas"]:checked ~ .contenedorCategorias [for="bodas"]{
         background-color: #ee4040;
         color: var(--fondo);
     }
@@ -538,4 +539,84 @@ input[type="radio"]{
     margin: 5px 0px;
     height: 4rem;
     font-family: 'Quicksand', sans-serif;
+}
+
+/* Footer */
+
+footer{
+    width: 100%;
+    background-color: #D2313B;
+    color: var(--fondo);
+}
+
+.contenidoFooter{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0px;
+}
+
+.contenidoFooter h3{
+    padding: 30px;
+    color: var(--fondo);
+}
+
+.enlacesFooter a{
+    color: white;
+    padding: 0px 10px;
+    margin-top: 5px;
+}
+
+.contenidoFooter hr{
+    width: 100%;
+    margin: 40px 0px;
+    border: 1px var(--fondo) solid;
+}
+
+.contenidoFooter section{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenidoFooter section p{
+    color: var(--fondo);
+}
+.redesFooter{
+    display: flex;
+    flex-direction: row;
+}
+
+.redesFooter a{
+    background-color: #ffffff69;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 50%;
+}
+
+.redesFooter a img{
+    width: 1rem;
+    height: 1rem;
+    filter: invert();
+}
+
+.instagram:hover{
+    background: linear-gradient(to top right, #FCDE30, #E9712A, #D2313B, #AE4198, #7540A1, #5443A8);
+}
+    
+.facebook:hover{
+    background-color: #4267B2;
+}
+
+.whatsapp:hover{
+    background-color: #25D366;
+}
+
+.youtube:hover{
+    background-color: #c4302b;
 }
